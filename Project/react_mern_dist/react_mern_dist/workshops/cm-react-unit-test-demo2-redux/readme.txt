@@ -1,0 +1,2 @@
+- npx create-react-app demo2 --template typescript
+- yarn add redux react-redux @reduxjs/toolkit

@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  noderunningondocker:
+    image: noderunningondocker
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 91:91
+      - 9229:9229
+    command: ["node", "--inspect=0.0.0.0:9229", "app.js"]
